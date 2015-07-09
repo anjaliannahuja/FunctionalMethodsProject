@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Exercise 1:</title>
+
+</head>
+<body>
+
+<p>REVIEW PROJECT: Try <a href="jquery-project.html">this simple project</a> to review creating and moving DOM elements w/ jQuery.
+
+<h3>Exercise 1:</h3>
+
+Reference: <a href="jquery-5.html">DOM Manipulation</a> and <a href="jquery-6.html">method chaining</a>
+<p>INSPIRATION: http://jenniferdewalt.com/</p>
+<p>Play with these: (hint: http://api.jquery.com/)</p>
+<p>
+<ul>
+<li>.fadeIn() - fade in a set of matched elements over time</li>
+<li>.fadeOut() - fade out as set of matched elements over time</li>
+<li>.fadeTo() - fade a set of matched elements to a specific opacity over time</li>
+<li>.slideDown() - animate an element sliding down over time</li>
+<li>.slideUp() - animate an element sliding up over time</li>
+<li>.slideToggle() - toggle between an element sliding up or down over time depending on whether it's visible or not</li>
+</ul>
+
+
+<b>EXAMPLES</b>
+
+<ul>
+<li>fadeout, fadein: http://jenniferdewalt.com/magic_8.html</li>
+</ul>
+</p>
+<p>EXTRA CREDIT: Get warmed up to start using collections and iteration again <a href="jquery-project-1.html">with this challenge!</a>
+
+<h3>Exercise 2:</h3>
+<p>Reference: <a href="jquery-7.html">Event handling</a>
+<ul>
+<li>'blur' - this event is emitted when an element loses focus, which happens when the user has focus on an element and Tabs to another element or clicks elsewhere</li>
+<li>'change' - this event is emitted when the value of an input field is changed, such as a text area, text input field, radio button, etc.</li>
+<li>'click' - this event is emitted when an element is clicked on</li>
+<li>'dblclick' - this event is emitted when an element is double-clicked on</li>
+<li>'error' - this event is emitted when an element is not loaded correctly, such as <img> elements</li>
+<li>'focus' - this event is emitted when an element gains focus, meaning that the user has reached the element via the Tab key or has clicked on it</li>
+<li>'hover' - this event is emitted when the mouse pointer enters or leaves the element</li>
+<li>'keydown' - this event is emitted when the user first presses any key down</li>
+<li>'keyup' - this event is emitted when the user releases a key</li>
+<li>'mousedown' - this event is emitted when the user presses a mouse button over the targeted element</li>
+<li>'mouseup' - this event is emitted when the user releases a mouse button over the target element</li>
+<li>'mouseenter' - this event is emitted when the user moves the mouse pointer into the targeted element</li>
+<li>'mouseleave' - this event is emitted when the user moves the mouse pointer out of the targeted element</li>
+<li>'mousemove' - this event is emitted when the user moves the mouse around within the targeted element</li>
+<li>'resize' - this event is emitted when the targeted element is resized</li>
+<li>'scroll' - this event is emitted when the target element is scrolled</li>
+<li>'select' - this event is emitted when the target element is selected, usually only used for various types of inputs</li>
+<li>'submit' - this event is emitted when the target element is submitted, and can only be attached to form inputs</li>
+</ul>
+
+
+<b>EXAMPLES</b>
+
+<ul>
+<li>click: http://jenniferdewalt.com/random_background.html, http://jenniferdewalt.com/mondrian.html</li>
+<li>hover: http://jenniferdewalt.com/technicolor_boxes.html</li>
+<li>mousemove: http://jenniferdewalt.com/caterpillar.html</li>
+<li>mouseenter, mouseleave: http://jenniferdewalt.com/js/keep_it_straight.js</li>
+<li>keypress: http://jenniferdewalt.com/type_attack.html</li>
+</ul></p>
+
+<p>EXTRA CREDIT: Do more with jQuery events and interactivity <a href="interactive.html">with this challenge!</a>
+</body>
+</html>

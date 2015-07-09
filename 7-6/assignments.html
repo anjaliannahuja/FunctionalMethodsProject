@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Code is Fun!</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body{
+      font:500 14px/21px 'Helvetica Neue', Helvetica, Arials;
+      background-color: #d8dbde;
+    }
+
+    #container{
+      width: 960px;
+      margin: 0 auto;
+      padding: 20px 50px;
+      background-color: #f0f3f5;
+    }
+
+    section {
+      margin-top: 20px;
+    }
+  </style>
+
+<script src="jQuery notes/jquery.js"></script>
+</head>
+<body>
+  <div id="container">
+  <h1>Code Is Fun!</h1>
+  <section>
+
+    <h2>RESOURCES</h2>
+  <ul>
+    <li><a href="jQuery notes/jquery1.html">jQuery - A Conceptual Overview</a></li>
+    <li><a href="jQuery notes/jquery2.html">How to Get jQuery</a></li>
+    <li><a href="jQuery notes/jquery3.html">Selecting Elements</a></li>
+  </ul>
+
+  </section>
+
+  <section>
+<h2>EXERCISES</h2>
+<h3 id="-exercise-1-">// EXERCISE 1: //</h3>
+<h4 id="-using-only-html-css-">!!! USING ONLY HTML &amp; CSS: !!!</h4>
+<ul>
+<li>[] Create a new HTML document</li>
+<li>[] Add a &lt;div&gt; with an ID of &quot;container&quot;</li>
+<li>[] Give that &lt;div&gt; node four children nodes, an &lt;h1&gt; tag, two &lt;p&gt; tags and two &lt;div&gt; tags.</li>
+<li>[] Give each of those two &lt;div&gt;s a class attribute with the value &quot;holder&quot;</li>
+<li>[] Give one of the &lt;p&gt; elements an id attribute with the value &quot;target&quot;</li>
+<li>[] Give each &lt;div class=&quot;holder&quot;&gt; an unordered list as a child element.</li>
+<li>[] Add an empty &lt;script&gt; tag just before the &lt;/body&gt; tag. Give it a &quot;src&quot; attribute with the value &quot;<a href="https://code.jquery.com/jquery-2.1.1.js">https://code.jquery.com/jquery-2.1.1.js</a>&quot;</li>
+<li>[] Make sure jQuery is working by typing <code>jQuery</code> into the browser console. It should return a function and not throw an error.</li>
+<li>[] Add a second &lt;script&gt; tag below the first to contain your own code</li>
+</ul>
+<h4 id="-using-only-javascript-and-jquery-">!!! USING ONLY JAVASCRIPT AND JQUERY: !!!</h4>
+<ul>
+<li>[] Create a new variable called &quot;allDIVs&quot; and assign to it a jQuery object containing reference all the &lt;div&gt; tags on the page.</li>
+<li>[] assign a jQuery object containing reference all the &lt;ul&gt;s to a variable &quot;allULs&quot;</li>
+<li>[] Turn all &lt;p&gt; tags&#39; text blue // hint: <a href="http://api.jquery.com/css/">http://api.jquery.com/css/</a></li>
+<li>[] turn #container&#39;s  &#39;background-color&#39; to &#39;red&#39;</li>
+<li>[] change .holder&#39;s &#39;border&#39; to &#39;1px solid black&#39;</li>
+</ul>
+<h4 id="extra-credit-you-haven-t-been-taught-how-to-do-this-yet-but-maybe-you-can-figure-it-out-">EXTRA CREDIT: You haven&#39;t been taught how to do this yet, but maybe you can figure it out...</h4>
+<p id="-hint-http-www-w3schools-com-cssref-css_selectors-asp-http-api-jquery-com-not-http-www-w3schools-com-css-css_display_visibility-asp-">(hint: <a href="http://www.w3schools.com/cssref/css_selectors.asp">http://www.w3schools.com/cssref/css_selectors.asp</a>, <a href="http://api.jquery.com/not/">http://api.jquery.com/not/</a>, <a href="http://www.w3schools.com/css/css_display_visibility.asp">http://www.w3schools.com/css/css_display_visibility.asp</a>)</p>
+<ul>
+<li>[] Change every &lt;li&gt; which inside a &lt;ul&gt;&#39;s &#39;font-weight&#39; to &#39;bold&#39;</li>
+<li>[] Make the &lt;p&gt; tag which does not have an id of &quot;target&quot; disappear</li>
+</ul>
+<h3 id="-exercise-two-">// EXERCISE TWO: //</h3>
+<h5> Resource: <a href="jQuery notes/jquery4.html">Adding, Removing, and Moving Elements</a></h5>
+<ul>
+<li>[] Prepend a new &lt;div&gt; with the text &quot;hello&quot; to div#container</li>
+<li>[] Append a new &lt;div&gt; with the text &quot;goodbye&quot; to div#container</li>
+<li>[] Prepend a new &lt;div&gt; the body, append a new &lt;div&gt; after. How is this different than above?</li>
+<li>[] Place a new div#first before the first div.holder</li>
+<li><p>[] Place a new div#last with text after the second div.holder</p>
+</li>
+<li><p>[] Create a <code>newDetachedDiv</code> var which is a jQuery object of a new &lt;div&gt; with some text in it</p>
+</li>
+<li>[] Change some of its css properties. Is it on the page yet?</li>
+<li>[] now append it. Is it on the page yet?</li>
+<li>[] Run this code: <code>$(&#39;div&#39;).remove();</code> What does it do?</li>
+<li><p>[] Reload the page and do this: $(&#39;#container&#39;).empty(); How is that different than above</p>
+</li>
+<li><p>[] What does this code do? <code>var orphanNode = $(&#39;#target&#39;).detach();</code></p>
+</li>
+<li><p>[] Now try adding: <code>$(&#39;#container&#39;).append(orphanNode);</code> Why would this be useful?</p>
+</li>
+<li><p>[] Use the <code>.find()</code> method to do something interesting: <a href="http://api.jquery.com/find/">http://api.jquery.com/find/</a></p>
+</li>
+<li><p>[] Play around with the <code>.parent()</code> and <code>.children()</code> methods: <a href="http://api.jquery.com/">http://api.jquery.com/</a>
+// (hint: [CMD + F] and search &quot;parent&quot;)
+// var parentNode = $(&#39;#target&#39;).parent();
+// var childrenNodes = parentNode.children();</p>
+</li>
+</ul>
+<h3 id="-build-">// BUILD: //</h3>
+<ul>
+<li>[] Combine setTimeout and/or setInterval with &#39;.css&#39; make various parts of your page change styles over time.</li>
+<li>[] Make your own version of <a href="http://jenniferdewalt.com/random_background.html">Background Randomizer</a> or <a href="http://jenniferdewalt.com/mondrian.html">Mondrian Maker</a> (hint: [CMD+OPTION+U] to read the source code)</li>
+</ul>
+
+</section>
+<section>
+
+  <h2>HOMEWORK</h2>
+  <p><li>Watch more of these <a href="https://www.learnhowtoprogram.com/sections/jquery">videos about jQuery</a> and try the exercises</li>
+  <li>Or try a similar resource <a href="https://www.codeschool.com/courses/try-jquery">from CodeSchool</a></li>
+  </ul></p>
+</section></div>
+</body>
+</html>

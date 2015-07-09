@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)http://learn.makersquare.com/courses/prework/2015-jquery-conceptual-overview.mdx -->
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="copyright" content="">
+    <link type="text/plain" rel="author" href="http://learn.makersquare.com/humans.txt">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript" src="./jquery1_files/9bf6dcc866"></script><script src="./jquery1_files/nr-632.min.js"></script><script id="typef_orm" src="./jquery1_files/share.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"9bf6dcc866","applicationID":"2645032","transactionName":"J1leTEdZXg8EFx5CVQNTQxdGXl0U","queueTime":16,"applicationTime":116,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-632.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):(o[e]||(o[e]=[]),void o[e].push(n))}var r=e("ee").create(),o={};n.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=(e(2),window),f=u.document,s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+    <title>JQuery Concepts Overview | MakerSquare | Learn</title>
+    <link href="http://learn.makersquare.com/assets/application-aaf21423264d3e5fb2d00d856577bba1.css" media="all" rel="stylesheet">
+
+
+    <script type="text/javascript">
+
+  // [websockets]
+  // Set URL of your WebSocketMain.swf here:
+  WEB_SOCKET_SWF_LOCATION = "/public/ws/WebSocketMain.swf";
+  // Set this to dump debug message from Flash to console.log:
+  WEB_SOCKET_DEBUG = true;
+
+  g = {
+    isLesson: false,
+    hostname: "learn.makersquare.com",
+    sid: "2055abc86e25b82b33d6054a9fb93aa4",
+  };
+  g.streamUrl = "" || g.hostname.replace(/^learn/, 'stream');
+
+  g.doc_id = "MqcDQLw1fA0"
+
+  g.userId = 467;
+  g.userIsAdmin = false;
+
+  g.path = {
+  };
+</script><style type="text/css"></style>
+
+
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="1GcWQ1F1TAJBVcVZlKVPrLDuv0xeNNC3lsH/n6Wh5J0=" name="csrf-token">
+
+    <script src="./jquery1_files/custom.modernizr-64d4582ff89abdccda9440f21f2bebcb.js"></script>
+
+    <link href="http://learn.makersquare.com/assets/favicon-290d58d6fda2eed442fec33dde59895f.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+    
+  <meta class="foundation-mq-small"><meta class="foundation-mq-medium"><meta class="foundation-mq-large"><style></style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./jquery1_files/main.js"></script></head>
+  <body class="pages student theme-mks-blue" id="show">
+
+    <div id="class-notices"></div>
+    <nav class="top-bar"><ul class="title-area"><li class="name"><h1><a class="logo" href="http://learn.makersquare.com/"><img alt="Diecutlogo" src="./jquery1_files/diecutlogo-5251100a6ec7a4308490b10614ea0922.png"><span class="logo_fat">Maker</span><span class="logo_skinny">Square</span></a></h1></li><li class="toggle-topbar menu-icon"><a href="http://learn.makersquare.com/courses/prework/2015-jquery-conceptual-overview.mdx#"><span>Menu</span></a></li></ul></nav>
+
+    <div class="row">
+      <div class="large-12 small-12">
+        <div class="curriculum" data-doc-id="MqcDQLw1fA0" data-ext="mdx"><h1>jQuery - A Conceptual Overview</h1>
+<div class="step" data-number="0" data-human-number="1">
+  <div class="step-content" data-human-number="1">
+    
+
+<p><strong>jQuery</strong> is a JavaScript library designed to make it easier to manipulate a web page.</p>
+
+<p>This includes:</p>
+
+<ul>
+<li>selecting elements</li>
+<li>adding/removing classes and attributes from elements</li>
+<li>hiding/showing/deleting/moving elements</li>
+<li>adding events to elements</li>
+<li>...and much, much, more</li>
+</ul>
+
+<h2>How is jQuery Easier?</h2>
+
+<p>Consider the following example JavaScript code that gets an element by its ID and then removes it from the DOM:</p>
+<div class="block-code"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">el</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'element-id'</span><span class="p">);</span>
+<span class="nx">el</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">removeChild</span><span class="p">(</span><span class="nx">el</span><span class="p">);</span>
+</pre></div>
+</td></tr></tbody></table></div>
+<p>Here's that same code written using jQuery:</p>
+<div class="block-code"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#element-id'</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
+</pre></div>
+</td></tr></tbody></table></div>
+<p>jQuery also normalizes a lot of subtle differences in how older browsers implement a variety of JavaScript functionalities. This means that if you use jQuery, you can use the same methods to manipulate and access the DOM in almost all browsers.</p>
+
+<p>In general, jQuery makes life a lot easier all around. This set of lessons will teach you all the fundamentals of how to get started using it.</p>
+
+<h2>The $ Character</h2>
+
+<p>In JavaScript, the <code>$</code> character is a completely valid character to use in variable names. jQuery uses the <code>$</code> character as a shorthand. You can use it interchangeably with <code>jQuery</code> as a way to reference the jQuery library:</p>
+<div class="block-code"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span class="c1">// Both functionally the same</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#element-id'</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s1">'#element-id'</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span>
+</pre></div>
+</td></tr></tbody></table></div>
+<p>While we're on the topic, how do <code>jQuery()</code> and <code>$()</code> work? <code>$()</code> looks especially weird. What's happening here is that <code>$()</code> is a function call, meaning that <code>$</code> is a function. This function is designed to take in a string (such as <code>$('#element-id')</code>), which will select an element. After this, we then call <code>remove</code> on that element. The <code>$</code> variable is the entry point into all jQuery-related functionality.</p>
+
+<h2>jQuery Objects vs DOM Elements</h2>
+
+<p>You'll hear two terms thrown around a lot in this lesson--**DOM elements** and <strong>jQuery objects</strong>. This nomenclature can be a little confusing, but it's important to understand the distinction. DOM elements are the actual elements that we ordinarily grab with native JavaScript and then manipulate using the browser's DOM API. They're the browser-world representation of the HTML that we put in. jQuery objects "wrap" DOM elements in new objects that define properties and method names that are easier for people to use, like <code>append</code> and <code>remove</code>, instead of more verbose JavaScript operations like <code>element.innerHtml = element.innerHtml + '&lt;div&gt;my new dom stuff&lt;/div&gt;'</code>. In addition, jQuery objects can wrap more than one element at a time, meaning that you can run many jQuery methods on multiple elements at the same time.</p>
+
+<p>How do jQuery objects "wrap" DOM elements? This is just terminology that means that jQuery objects store references to the DOM elements they "wrap". When we call methods on jQuery objects, jQuery then goes and runs the native JavaScript methods on the actual DOM elements that the jQuery object is wrapping. This abstraction gives us a lot of power and flexibility in our manipulation of the DOM.</p>
+
+<p>Let's dig into how you actually get this neat jQuery thing in <a href="http://learn.makersquare.com/courses/js_fundamentals/jquery-basics/getting-jquery.mdx">Getting jQuery</a>.</p>
+
+  </div>
+  <div class="progress-check">
+    <div class="off">
+      <i class="icon-signin"></i>
+      <span>Done?</span>
+    </div>
+    <div class="on">
+      <i class="icon-check"></i>
+      <span>Done!</span>
+    </div>
+  </div>
+</div>
+
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+</div><script type="text/javascript"> document.title = "JQuery Concepts Overview | MakerSquare | Learn"; </script>
+      </div>
+    </div>
+
+    
+
+    <div id="templates">
+      <script class="class-notice-broadcast" type="text/template">
+  {{ message }} <span class="author">&ndash; {{ author }}, {{ date }}</span>
+  <a href="#" class="close">&times;</a>
+</script>
+
+<script class="class-notice-preview" type="text/template">
+  <div class='preview'>PREVIEW</div>
+  {{ message }} <span class="author">&ndash; {{ author }}, {{ date }}</span>
+  <a href="#" class="close">&times;</a>
+</script>
+
+<script class="step-comment" type="text/template">
+  <div class='avatar'><img src='/users/{{user_id}}/avatar?size=50'/></div>
+  <div class='content'>
+    {{ message }}
+    <div class="author">
+      {{ author }}, {{ date }}
+      <a class="delete hide" href="#">delete</a>
+    </span>
+  </div>
+</script>
+
+<!-- JSDN templates -->
+<script class="jsdn-var-name" type="text/template">
+  <b>var</b> {{ name }}
+</script>
+
+<script class="jsdn-property" type="text/template">
+  {{ name }}
+</script>
+
+<script class="jsdn-object" type="text/template">
+  <div class="properties"></div>
+</script>
+
+<script class="jsdn-function" type="text/template">
+  <div class="function-definition">
+    <div class="inner">{{ def }}</div>
+  </div>
+  <div class="properties"></div>
+</script>
+    </div>
+
+    <script src="./jquery1_files/application-4f837fd937de84788a5cede39acfd247.js"></script>
+    
+    
+
+
+    <script data-main="/main" src="./jquery1_files/require.js"></script>
+    <script type="text/javascript">
+      if (window.MKS && window.MKS.App) { window.app = new window.MKS.App(); }
+    </script>
+
+  
+
+
+</body></html>

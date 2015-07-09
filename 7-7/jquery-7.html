@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)http://learn.makersquare.com/courses/prework/2015-jquery-basic-events.mdx -->
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="copyright" content="">
+    <link type="text/plain" rel="author" href="http://learn.makersquare.com/humans.txt">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript" src="./jquery-7_files/9bf6dcc866"></script><script src="./jquery-7_files/nr-632.min.js"></script><script id="typef_orm" src="./jquery-7_files/share.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"9bf6dcc866","applicationID":"2645032","transactionName":"J1leTEdZXg8EFx5CVQNTQxdGXl0U","queueTime":19,"applicationTime":129,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-632.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):(o[e]||(o[e]=[]),void o[e].push(n))}var r=e("ee").create(),o={};n.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=(e(2),window),f=u.document,s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+    <title>Basic Events | MakerSquare | Learn</title>
+    <link href="http://learn.makersquare.com/assets/application-aaf21423264d3e5fb2d00d856577bba1.css" media="all" rel="stylesheet">
+
+
+    <script type="text/javascript">
+
+  // [websockets]
+  // Set URL of your WebSocketMain.swf here:
+  WEB_SOCKET_SWF_LOCATION = "/public/ws/WebSocketMain.swf";
+  // Set this to dump debug message from Flash to console.log:
+  WEB_SOCKET_DEBUG = true;
+
+  g = {
+    isLesson: false,
+    hostname: "learn.makersquare.com",
+    sid: "2055abc86e25b82b33d6054a9fb93aa4",
+  };
+  g.streamUrl = "" || g.hostname.replace(/^learn/, 'stream');
+
+  g.doc_id = "8UO3z7z0S9Q"
+
+  g.userId = 467;
+  g.userIsAdmin = false;
+
+  g.path = {
+  };
+</script><style type="text/css"></style>
+
+
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="1GcWQ1F1TAJBVcVZlKVPrLDuv0xeNNC3lsH/n6Wh5J0=" name="csrf-token">
+
+    <script src="./jquery-7_files/custom.modernizr-64d4582ff89abdccda9440f21f2bebcb.js"></script>
+
+    <link href="http://learn.makersquare.com/assets/favicon-290d58d6fda2eed442fec33dde59895f.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+    
+  <meta class="foundation-mq-small"><meta class="foundation-mq-medium"><meta class="foundation-mq-large"><style></style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main" src="./jquery-7_files/main.js"></script></head>
+  <body class="pages student theme-mks-blue" id="show">
+
+    <div id="class-notices"></div>
+    <nav class="top-bar"><ul class="title-area"><li class="name"><h1><a class="logo" href="http://learn.makersquare.com/"><img alt="Diecutlogo" src="./jquery-7_files/diecutlogo-5251100a6ec7a4308490b10614ea0922.png"><span class="logo_fat">Maker</span><span class="logo_skinny">Square</span></a></h1></li><li class="toggle-topbar menu-icon"><a href="http://learn.makersquare.com/courses/prework/2015-jquery-basic-events.mdx#"><span>Menu</span></a></li></ul></nav>
+
+    <div class="row">
+      <div class="large-12 small-12">
+        <div class="curriculum" data-doc-id="8UO3z7z0S9Q" data-ext="mdx"><h1>Basic Events with jQuery</h1>
+<div class="step" data-number="0" data-human-number="1">
+  <div class="step-content" data-human-number="1">
+    
+
+<p>Events are messages that occur when you interact with elements on the DOM. For instance, any element you click on with your mouse will send (or <strong>emit</strong>) a <strong>click event</strong>. Ordinarily, clicking on most elements has no effect, but you can assign an effect using jQuery's <a href="http://api.jquery.com/on/">.on()</a> method. The first argument passed to it should be the string 'click', and the second one should be a callback function. It looks like this:</p>
+<div class="block-code"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"clickable"</span><span class="nt">&gt;</span>Click me to see a console.log()<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</td></tr></tbody></table></div><div class="block-code"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span class="c1">// "e" here is the object representing the event</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#clickable'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello!'</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</td></tr></tbody></table></div>
+<p>If you then click on that <code>&lt;div&gt;</code> with the <code>id="clickable"</code>, even though it is not a button, it will log a message. What we've done here is added a function that waits for an event to happen before executing, called an <strong>event listener</strong>. You can assign multiple event handlers to the same element:</p>
+<div class="block-code"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"clickable"</span><span class="nt">&gt;</span>Click me to see a lot of console.log()<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</td></tr></tbody></table></div><div class="block-code"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span class="c1">// This will log "Hello!" 5 times</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#clickable'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello!'</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#clickable'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello!'</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#clickable'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello!'</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#clickable'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hi!'</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#clickable'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Bye!'</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</td></tr></tbody></table></div>
+<p>Now if you were to click on the element, you would see "Hello!" three times, "Hi!" once, and "Bye!" once in your console.</p>
+
+<p>Since we can pass a string to <code>.on()</code>, this seems to suggest that there are other types of events too. There are! There are a whole bunch, as a matter of fact:</p>
+
+<ul>
+<li><code>'blur'</code> - this event is emitted when an element loses focus, which happens when the user has focus on an element and Tabs to another element or clicks elsewhere</li>
+<li><code>'change'</code> - this event is emitted when the value of an input field is changed, such as a text area, text input field, radio button, etc.</li>
+<li><code>'click'</code> - this event is emitted when an element is clicked on</li>
+<li><code>'dblclick'</code> - this event is emitted when an element is double-clicked on</li>
+<li><code>'error'</code> - this event is emitted when an element is not loaded correctly, such as <code>&lt;img&gt;</code> elements</li>
+<li><code>'focus'</code> - this event is emitted when an element gains focus, meaning that the user has reached the element via the Tab key or has clicked on it</li>
+<li><code>'hover'</code> - this event is emitted when the mouse pointer enters or leaves the element</li>
+<li><code>'keydown'</code> - this event is emitted when the user first presses any key down</li>
+<li><code>'keyup'</code> - this event is emitted when the user releases a key</li>
+<li><code>'mousedown'</code> - this event is emitted when the user presses a mouse button over the targeted element</li>
+<li><code>'mouseup'</code> - this event is emitted when the user releases a mouse button over the target element</li>
+<li><code>'mouseenter'</code> - this event is emitted when the user moves the mouse pointer into the targeted element</li>
+<li><code>'mouseleave'</code> - this event is emitted when the user moves the mouse pointer out of the targeted element</li>
+<li><code>'mousemove'</code> - this event is emitted when the user moves the mouse around within the targeted element</li>
+<li><code>'ready'</code> - this event is emitted when the DOM is fully loaded; generally only use with the <code>document</code> element</li>
+<li><code>'resize'</code> - this event is emitted when the targeted element is resized</li>
+<li><code>'scroll'</code> - this event is emitted when the target element is scrolled</li>
+<li><code>'select'</code> - this event is emitted when the target element is selected, usually only used for various types of inputs</li>
+<li><code>'submit'</code> - this event is emitted when the target element is submitted, and can only be attached to form inputs</li>
+</ul>
+
+<p>As you can see, you can attach an event listener to practically every user interaction possible besides thought (for now). There are even a whole slew of touch-related events for mobile devices and tablets which are outside the scope of this lesson. You're encouraged to toy around with all of the different events and see what's possible!</p>
+
+<h2>Getting the Targeted Element</h2>
+
+<p>Let's say that we want to be able to click on an element and get arbitrary data from it in the form of a <strong>data attribute</strong> (discussed in <a href="http://learn.makersquare.com/courses/js_fundamentals/jquery-basics/changing-element-attributes.mdx">Changing Element Attributes</a>). However, how do we get the actual element that was clicked on? We do this using the <strong>this</strong> keyword.</p>
+
+<p>In jQuery, whenever you use <code>.on()</code>, the value of <code>this</code> in your event listener function will refer to the element being targeted by that event listener. For example:</p>
+<div class="block-code"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"clickable"</span> <span class="na">data-id=</span><span class="s">"5"</span><span class="nt">&gt;</span>A clickable div<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+</td></tr></tbody></table></div><div class="block-code"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#clickable'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">jQueryElement</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">jQueryElement</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">'id'</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">val</span><span class="p">);</span> <span class="c1">// logs 5</span>
+<span class="p">});</span>
+</pre></div>
+</td></tr></tbody></table></div>
+<p>You'll notice that we had to wrap <code>this</code> in the jQuery function <code>$()</code>. The reason for this is that jQuery sets <code>this</code> to point to the actual DOM element we triggered the event handler on, <em>not</em> a jQuery object wrapping that DOM element. Therefore, if we want to use jQuery methods on <code>this</code>, we need to first wrap it in a jQuery object.</p>
+
+<p>Once we've done this, we can access the elements with the expressive power of jQuery.</p>
+
+  </div>
+  <div class="progress-check">
+    <div class="off">
+      <i class="icon-signin"></i>
+      <span>Done?</span>
+    </div>
+    <div class="on">
+      <i class="icon-check"></i>
+      <span>Done!</span>
+    </div>
+  </div>
+</div>
+
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+</div><script type="text/javascript"> document.title = "Basic Events | MakerSquare | Learn"; </script>
+      </div>
+    </div>
+
+    
+
+    <div id="templates">
+      <script class="class-notice-broadcast" type="text/template">
+  {{ message }} <span class="author">&ndash; {{ author }}, {{ date }}</span>
+  <a href="#" class="close">&times;</a>
+</script>
+
+<script class="class-notice-preview" type="text/template">
+  <div class='preview'>PREVIEW</div>
+  {{ message }} <span class="author">&ndash; {{ author }}, {{ date }}</span>
+  <a href="#" class="close">&times;</a>
+</script>
+
+<script class="step-comment" type="text/template">
+  <div class='avatar'><img src='/users/{{user_id}}/avatar?size=50'/></div>
+  <div class='content'>
+    {{ message }}
+    <div class="author">
+      {{ author }}, {{ date }}
+      <a class="delete hide" href="#">delete</a>
+    </span>
+  </div>
+</script>
+
+<!-- JSDN templates -->
+<script class="jsdn-var-name" type="text/template">
+  <b>var</b> {{ name }}
+</script>
+
+<script class="jsdn-property" type="text/template">
+  {{ name }}
+</script>
+
+<script class="jsdn-object" type="text/template">
+  <div class="properties"></div>
+</script>
+
+<script class="jsdn-function" type="text/template">
+  <div class="function-definition">
+    <div class="inner">{{ def }}</div>
+  </div>
+  <div class="properties"></div>
+</script>
+    </div>
+
+    <script src="./jquery-7_files/application-4f837fd937de84788a5cede39acfd247.js"></script>
+    
+    
+
+
+    <script data-main="/main" src="./jquery-7_files/require.js"></script>
+    <script type="text/javascript">
+      if (window.MKS && window.MKS.App) { window.app = new window.MKS.App(); }
+    </script>
+
+  
+
+
+</body></html>
