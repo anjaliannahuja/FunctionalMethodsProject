@@ -59,18 +59,44 @@ var oldGuardians = [
 
   var Guardians = $.merge(oldGuardians, newGuardians)
 
-  // Guardians = $.map(Guardians, function(name){
-  //   return name
-  // })
-
-  // Guardians = Guardians.filter(function(name){
-  //   return name != "Groot"
-  // })
-
-  console.log(Guardians)
+  // GuardiansMap = $.map(Guardians, function(item){
+  //    return item.name
+  //  })
 
 
 
+var combined = $.map(Guardians, function(item){
+  return item.name + ': ' + item.notes
+})
+
+combined = combined.filter(function(item){
+  return item != "Groot: Appeared as a sapling beginning in Guardians of the Galaxy vol. 2 #1 (July 2008); joined active team after fully regrowing."
+})
+
+combined.sort()
+
+
+console.log(combined)
+
+
+
+var myList = $('<ul>Hero and Notes</ul>')
+
+
+$.map(combined,function(name){
+    myList.append('<li>'+name+'</li>')
+
+})
+
+
+
+
+$('body').append(myList)
+
+
+
+
+  
 
 
 
